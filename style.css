@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+body {
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/*----------common features------------*/
+
+.section__title, .header__title, .sub__section__title {
+  color: var(--DarkGrayishBlue);
+  font-weight: 600;
+  font-size: 1.45em;
+  margin-bottom: 20px;
+}
+
+.header__logo, .section__logo, .footer__logo {
+  margin-bottom: 50px;
+}
+
+.paragraph, .section__paragraph, .sub__section__paragraph {
+  font-size: 0.75em;
+  color: var(--GrayishBlue);
+  font-weight: 400;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.85em;
+  padding: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/*---------footer-----------*/
+
+header {
+  padding: 95px 25px 45px;
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 0;
+}
+
+header .paragraph {
+  margin-bottom: 40px;
+}
+
+#ios {
+  background-color: var(--StrongCyan);
+  box-shadow: 0 10px 10px rgba(38, 186, 164, 0.2);;
+}
+
+#mac {
+  background-color: var(--LightBlue);
+  box-shadow: 0 10px 10px hsla(233, 100%, 69%, 0.2);
+}
+
+/*---------main---------*/
+
+main {
+  padding: 45px 25px 90px;
+  gap: 5em;
+  overflow: hidden;
+}
+
+/*-----first section ---------*/
+
+#first__section__container .section__paragraph {
+  margin-bottom: 50px;
+}
+
+#first__section__img {
+  margin-bottom: 45px;
+}
+
+#sub__section__items {
+  gap: 1em;
+}
+
+/*---------second section----------*/
+
+#second__section__container .section__paragraph {
+  margin-bottom: 50px;
+}
+
+/*--------third section ------------*/
+
+#third__section__container .section__paragraph {
+  margin-bottom: 50px;
+}
+
+/*---------fourth section------------*/
+
+#fourth__section__container .container-fluid .row {
+  row-gap: 2.75em;
+}
+
+/*-------foooter--------*/
+footer {
+  background-color: hsla(202, 11%, 66%, 0.1);
+  padding: 40px;
+}
+
+.footer__info__section {
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  margin-bottom: 2.5em;
+}
+
+.footer__section__grid .footer__row {
+  row-gap: 2em;
+  font-size: 0.75em;
+  color: var(--GrayishBlue);
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.footer__row div:hover{
+  color: var(--StrongCyan);
+}
+
+.footer__section__media {
+  gap: 2em;
+}
+
+.icon__media {
+  width: 20px;
+  height: 20px;
+  color: var(--GrayishBlue);
+}
+
+.icon__media:hover {
+  color: var(--StrongCyan);
+}
+
+.attribution { 
+  font-size: 13px;
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 2%, 40%)
+}
+
+@media only screen and (min-width: 650px) {
+
+  header {
+    padding: 95px 25% 45px;
+  }
+
+  button {
+    width: 50%;
+  }
+
+  #second__section__container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  #third__section__container, #fourth__section__container {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  button {
+    width: 40%;
+  }
+
+  #first__section__container {
+    padding-bottom: 15%;
+    position: relative;
+  }
+
+
+  #first__section__img {
+    position: absolute;
+    left: -15%;
+    height: 70%;
+  }
+
+  #first__section__container .section__title, .section__paragraph {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #sub__section__items {
+    text-align: left;
+    padding: 50px 10% 50px 10%;
+  }
+
+  #fifth__section__container {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  footer {
+    padding: 45px 11%;
+  }
+
+  .footer__info__section {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  #first__section__img {
+    left: -10%;
+    height: 80%;
+  }
+
+}
+
+
